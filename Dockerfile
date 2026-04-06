@@ -12,5 +12,5 @@ FROM nginx:alpine
 COPY --from=build /app/dist/consultorio-web/browser /usr/share/nginx/html
 # Copia arquivo de configuração personalizado do Nginx (opcional, mas recomendado)
 # COPY nginx.conf /etc/nginx/conf.d/default.conf 
-EXPOSE 3000
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
