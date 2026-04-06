@@ -1,0 +1,10 @@
+services:
+  consultorio-web:
+    image: consultorio-web:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: consultorio-web
+    ports:
+      - "3000:80"
+    restart: always
