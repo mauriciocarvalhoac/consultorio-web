@@ -1,0 +1,31 @@
+<main class="main-side">
+    <div class="up-side">
+        <div class="up-left">
+            <button (click)="toggleMenu()">
+                <span> ☰ </span>
+            </button>
+        </div>
+        <div class="up-right">
+            <span>Olá, funcionário com sobrenome.</span>
+            <a href="#" class="text-decoration-none text-white">Sair</a>
+        </div>
+    </div>
+
+    <div class="both-side">
+        @if (isMenuVisible()) {
+        <div class="menu-side">
+            <ul class="nav nav-fill">
+                <li class="nav-title">
+                    <span>Cadastros</span>
+                </li>
+                <li class="nav-item" [routerLink]="['/medico-listagem']" style="cursor: pointer;">
+                    <a class="nav-link" aria-current="page">Médicos</a>
+                </li>
+            </ul>
+        </div>
+        }
+        <div class="content-side">
+            <router-outlet />
+        </div>
+    </div>
+</main>
