@@ -1,4 +1,42 @@
-<article style="padding: 5px;">
-    <p>medico-inclusao works!</p>
+<article>
+    <nav>
+        <span style="font-size: 12px;">Cadastro > Inclusão de Médicos</span>
+        <h3>Cadastro de Médicos</h3>
+    </nav>
 
+    <section class="formulario-cadastro">
+        <nav class="navbar-buttons-action">
+            <div>
+                <button class="btn btn-sm btn-secondary">Limpar</button>
+            </div>
+            <div>
+                <button class="btn btn-sm btn-danger">Cancelar</button>
+                <button class="btn btn-sm btn-success ml-10">Cadastrar</button>
+            </div>
+        </nav>
+
+        <form [formGroup]="formulario">
+            <div class="row">
+                <div class="col">
+                    <label>Nome:</label>
+                    <input formControlName="nome" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>CPF:</label>
+                    <input formControlName="cpf" class="form-control">
+                </div>
+                <div class="col">
+                    <label>Email:</label>
+                    <input formControlName="email" type="email" class="form-control">
+                </div>
+                <div class="col">
+                    <label>Telefone:</label>
+                    <input formControlName="telefone" class="form-control">
+                </div>
+            </div>
+        </form>
+    </section>
 </article>

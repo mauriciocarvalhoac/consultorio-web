@@ -10,3 +10,19 @@
     --primary-color: #0087cd;
     --secondary-color: #444444;
 }
+
+.formulario-cadastro {
+    .navbar-buttons-action {
+        padding: 2px;
+        background: #aaaaaa;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+.mr-10 {
+    margin-right: 10px;
+}

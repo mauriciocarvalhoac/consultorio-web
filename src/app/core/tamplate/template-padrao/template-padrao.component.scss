@@ -51,8 +51,10 @@
     }
 
     .content-side {
+        padding: 7px;
         background: #eeeeee;
         width: 100%;
         height: calc(100vh - var(--navbar-height));
     }
 }
+
