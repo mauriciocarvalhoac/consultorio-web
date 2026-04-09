@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ng add @ng-bootstrap/ng-bootstrap
 npm install @angular/forms
-npm install ngx-mask
+npm install ngx-mask@19
 @angular/common@"^21.0.0"
 
 ## Development server
