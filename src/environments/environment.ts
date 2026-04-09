@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiMedicos: 'http://mauriciocarvalho.net:8181',
+    apiMedicos: 'http://mauriciocarvalho.net:8081',
 };
