@@ -1,4 +1,4 @@
-<article>
+<article style="background: #EEF; padding: 10px 10px; height: calc(100vh - 50px - 7px);">
     <nav>
         <span style="font-size: 12px;">Cadastro > Inclusão de Médicos</span>
         <h3>Cadastro de Médicos</h3>
@@ -7,36 +7,42 @@
     <section class="formulario-cadastro">
         <nav class="navbar-buttons-action">
             <div>
-                <button class="btn btn-sm btn-secondary">Limpar</button>
+                <button class="btn btn-sm btn-outline-secondary">Voltar</button>
             </div>
             <div>
-                <button class="btn btn-sm btn-danger">Cancelar</button>
-                <button class="btn btn-sm btn-success ml-10">Cadastrar</button>
+                <button class="btn btn-sm btn-outline-danger">Cancelar</button>
+                <button (click)="salvar()" class="btn btn-sm btn-outline-primary ml-10">Salvar</button>
             </div>
         </nav>
 
-        <form [formGroup]="formulario">
-            <div class="row">
-                <div class="col">
-                    <label>Nome:</label>
-                    <input formControlName="nome" class="form-control">
-                </div>
-            </div>
+        <div style="background: #DDD; margin: 10px 0; padding: 0 10px;">
+            <span style="font-weight: 600; font-size: 16px;">Identificação</span>
+        </div>
 
-            <div class="row">
-                <div class="col">
-                    <label>CPF:</label>
-                    <input formControlName="cpf" class="form-control">
+        <div style="background: #EEF;">
+            <form [formGroup]="formulario">
+                <div class="row">
+                    <div class="col">
+                        <label>Nome:</label>
+                        <input formControlName="nome" class="form-control">
+                    </div>
                 </div>
-                <div class="col">
-                    <label>Email:</label>
-                    <input formControlName="email" type="email" class="form-control">
+
+                <div class="row">
+                    <div class="col">
+                        <label>CPF:</label>
+                        <input formControlName="cpf" type="text" mask="000.000.000-00" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label>Email:</label>
+                        <input formControlName="email" type="email" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label>Telefone:</label>
+                        <input formControlName="telefone" mask="(00) 00000-0000||(00) 0000-0000" class="form-control">
+                    </div>
                 </div>
-                <div class="col">
-                    <label>Telefone:</label>
-                    <input formControlName="telefone" class="form-control">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </section>
 </article>
