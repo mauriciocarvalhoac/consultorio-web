@@ -2,11 +2,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgxMaskDirective } from 'ngx-mask';
 import { MedicoService } from '../../../services/medico.service';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-medico-inclusao',
   standalone: true,
-  imports: [ReactiveFormsModule, NgxMaskDirective,],
+  imports: [ReactiveFormsModule, NgxMaskDirective, RouterLink],
   templateUrl: './medico-inclusao.component.html',
   styleUrl: './medico-inclusao.component.scss'
 })
